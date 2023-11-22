@@ -27,7 +27,6 @@
         .project__card6 {
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: space-between;
             width: 472.42px;
             height: 265px;  
@@ -40,17 +39,35 @@
             .project__img6 {
                 width: 100%;
                 height: auto;
+                align-items: center;
             }
 
             .project__button {
+                display:flex;
                 margin-top: 10px;
+                background-color:$primary-color;
+                color: $secondary-color;
+                font-family: $font-body2;
+                font-size: 12px;
+                text-decoration: none;
+                justify-content: flex-start;
             }
+
+            .project__button--eye,
+            .project__button--snippet{
+                    background-color:$primary-color;
+                    display: flex;
+                    justify-content: flex-end;
+
+            }
+            
 
             .project__name{
                     display:flex;
                     font-family: $font-body1;
                     justify-content: flex-start;
                     margin-top: 10px;
+                    font-size: 42px;
                 }
             }
         }
