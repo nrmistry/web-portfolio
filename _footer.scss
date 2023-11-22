@@ -1,0 +1,58 @@
+@use "./variables" as *;
+@use "./variables" as *;
+footer{
+    background-color: $secondary-color;
+    height: 114px;
+    width: 100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    &__foot {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            background-color: $secondary-color;
+            text-decoration: none;
+            border-radius: 50%;
+
+            &__img1,
+            &__img2,
+            &__img3 {
+                width: 20px;
+                height: 20px;
+                background-color: white;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .foot{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width:100vw;
+        background-color: $secondary-color;
+
+        .foot__contacts {
+        margin-top: 100px;
+        }
+
+        .foot__button {
+        margin-bottom: 5px;
+        background-color:$secondary-color;
+        margin-left: 50px;
+
+        }
+    }
+}
+

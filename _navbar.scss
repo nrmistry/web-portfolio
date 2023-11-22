@@ -1,57 +1,79 @@
 @use "./variables" as *;
 
+
 .navbar {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height:58px;
+    height: 58px;
     padding: 0 20px;
-    
-    &__button{
-        display:flex;
+
+    &__button {
+        display: flex;
         gap: 2rem;
         list-style: none;
         font-size: 20px;
         text-decoration: none;
-        text-decoration-color:$primary-color;
+        text-decoration-color: $primary-color;
         color: $secondary-color;
         font-family: $font-body2;
-       
-            &--about {
-                &:hover{
-                    color: $tertiary-color; 
-                    text-decoration: underline;
-                    text-underline-offset: 1rem;
-                    text-decoration-color: $tertiary-color; 
-                }
-            }
 
-            &--projects {
-                &:hover{
-                    color: $tertiary-color; 
-                    text-decoration: underline;
-                    text-underline-offset: 1rem;
-                    text-decoration-color: $tertiary-color; 
-                }
-            }
-
-            &--contact {
-                &:hover{
-                    color: $tertiary-color; 
-                    text-decoration: underline;
-                    text-underline-offset: 1rem;
-                    text-decoration-color: $tertiary-color; 
-                }
+        &--about {
+            &:hover {
+                color: $tertiary-color;
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+                text-decoration-color: $tertiary-color;
             }
         }
 
-    .logo{
+        &--projects {
+            &:hover {
+                color: $tertiary-color;
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+                text-decoration-color: $tertiary-color;
+            }
+        }
+
+        &--contact {
+            &:hover {
+                color: $tertiary-color;
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+                text-decoration-color: $tertiary-color;
+            }
+        }
+    }
+
+    .logo {
         font-family: $font-body1;
         font-size: 48px;
 
-        &:hover{
+        &:hover {
             cursor: default;
         }
-
     }
 }
+
+@media only screen and (max-device-width: 768px) {
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__button {
+            display: none;
+        }
+
+        .logo {
+            justify-content: center;
+            margin-top: 100px;
+            font-size:24px;
+        }
+    }
+}
+
+
+
+

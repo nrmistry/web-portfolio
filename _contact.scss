@@ -29,6 +29,7 @@
         color: $secondary-color;
         justify-content: center;
         align-items: center;
+        margin-bottom:100px;
 
         &:hover{
             color: $tertiary-color; 
@@ -36,6 +37,34 @@
             text-underline-offset: 1rem;
             text-decoration-color: $tertiary-color;
             border: 4px solid $tertiary-color 
+        }
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .contact {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__title {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:80px;
+            margin-right: 40px;
+            margin-left: 40px;
+            margin-top:400px;
+        }
+
+        &__button {
+            display:flex;
+            justify-content: center;
+            font-size: 16px;
+            margin-top: 50px;
+            height: 79px;
+            width: 272px;
+        
         }
     }
 }
