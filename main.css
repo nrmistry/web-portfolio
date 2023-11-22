@@ -235,6 +235,43 @@
   font-size: 42px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  font-family: "Cormorant", serif;
+  margin-top: 500px;
+  margin-bottom: 100px;
+  margin-left: 134px;
+}
+.contact__button {
+  display: flex;
+  font-size: 24px;
+  font-family: "Inter", serif;
+  border: 4px solid black;
+  height: 79px;
+  width: 321px;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.contact__button:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: grey;
+  border: 4px solid grey;
+}
+
 * {
   background-color: white;
 }/*# sourceMappingURL=main.css.map */
