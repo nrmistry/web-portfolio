@@ -216,7 +216,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  grid-row-gap: 300px;
+  grid-row-gap: 400px;
   margin-left: 55px;
 }
 .project__card .project__card1,
@@ -299,8 +299,6 @@
 .project__card .project__card6 .project__button--eye,
 .project__card .project__card6 .project__button--snippet {
   background-color: white;
-  display: flex;
-  justify-content: flex-end;
 }
 .project__card .project__card1 .project__name,
 .project__card .project__card2 .project__name,
@@ -318,28 +316,27 @@
 @media only screen and (max-width: 768px) {
   .project__card {
     grid-template-columns: repeat(1, 1fr);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 15px;
   }
-  .project__card .projects__img1,
-  .project__card .projects__img2,
-  .project__card .projects__img3 {
-    width: 50px;
-    height: 50px;
+  .project__card .project__card1,
+  .project__card .project__card2,
+  .project__card .project__card3 {
+    width: 270px;
+    height: 270px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 0px;
   }
   .project__card .project__card4,
   .project__card .project__card5,
   .project__card .project__card6 {
     display: none;
   }
-  .project__card .project__button--react,
-  .project__card .project__button--scss {
-    display: none;
+  .project__card .project__name {
+    font-size: 12;
   }
   .project__title {
     display: flex;
@@ -348,7 +345,10 @@
     align-items: center;
     font-size: 32px;
     margin-left: 0;
-    margin-top: 50px;
+    margin-top: 100px;
+  }
+  .project__name {
+    font-size: 12px;
   }
 }
 .contact {
