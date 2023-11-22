@@ -1,0 +1,12 @@
+@use "./variables" as *;
+@use"./header";
+@use"./navbar";
+@use"./about";
+*{
+    background-color:$primary-color;
+   
+}
+
+body{
+    $font-body:'Cormorant', serif
+}

@@ -1,0 +1,57 @@
+@use "./variables" as *;
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:58px;
+    padding: 0 20px;
+    
+    &__button{
+        display:flex;
+        gap: 2rem;
+        list-style: none;
+        font-size: 20px;
+        text-decoration: none;
+        text-decoration-color:$primary-color;
+        color: $secondary-color;
+        font-family: $font-body2;
+       
+            &--about {
+                &:hover{
+                    color: $tertiary-color; 
+                    text-decoration: underline;
+                    text-underline-offset: 1rem;
+                    text-decoration-color: $tertiary-color; 
+                }
+            }
+
+            &--projects {
+                &:hover{
+                    color: $tertiary-color; 
+                    text-decoration: underline;
+                    text-underline-offset: 1rem;
+                    text-decoration-color: $tertiary-color; 
+                }
+            }
+
+            &--contact {
+                &:hover{
+                    color: $tertiary-color; 
+                    text-decoration: underline;
+                    text-underline-offset: 1rem;
+                    text-decoration-color: $tertiary-color; 
+                }
+            }
+        }
+
+    .logo{
+        font-family: $font-body1;
+        font-size: 48px;
+
+        &:hover{
+            cursor: default;
+        }
+
+    }
+}
