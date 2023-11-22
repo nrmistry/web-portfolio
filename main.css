@@ -6,12 +6,13 @@
   font-family: "Cormorant", serif;
   justify-content: center;
   align-items: center;
+  margin-top: 213px;
 }
 .head__info {
   font-size: 20px;
   font-family: "Inter", serif;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 100px;
   margin-left: 191px;
   max-width: 615px;
   height: 128px;
@@ -61,6 +62,40 @@
 }
 .navbar .logo:hover {
   cursor: default;
+}
+
+.about {
+  display: flex;
+  max-width: 873px;
+  margin-top: 200px;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+}
+.about__content__text {
+  margin-left: 400px;
+}
+.about__content__text__title {
+  font-family: "Cormorant", serif;
+  font-size: 3rem;
+  margin-top: 10px;
+}
+.about__content__text__paragraph, .about__content__text__paragraph2 {
+  font-family: "Inter", serif;
+  font-size: 18px;
+  margin-top: 10px;
+  max-width: 200px;
+  height: auto;
+}
+.about__content__text__paragraph2 {
+  margin-top: 5px;
+}
+.about__content__img1 {
+  max-width: 200px;
+  height: 558px;
+  margin-top: 100px;
+  order: 1;
 }
 
 * {
