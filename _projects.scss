@@ -1,0 +1,57 @@
+@use "./variables" as *;
+
+.project {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-family: $font-body1;
+        font-size: 48px;
+        margin-bottom: 30px;
+        margin-left: 134px;
+        margin-top: 200px;
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        grid-row-gap: 300px;
+        margin-left:134px;
+
+        .project__card1,
+        .project__card2,
+        .project__card3,
+        .project__card4,
+        .project__card5,
+        .project__card6 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 472.42px;
+            height: 265px;  
+
+            .projects__img1,
+            .project__img2,
+            .project__img3,
+            .project__img4,
+            .project__img5,
+            .project__img6 {
+                width: 100%;
+                height: auto;
+            }
+
+            .project__button {
+                margin-top: 10px;
+            }
+
+            .project__name{
+                    display:flex;
+                    font-family: $font-body1;
+                    justify-content: flex-start;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }

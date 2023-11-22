@@ -7,19 +7,21 @@
     &__p{
         font-family:$font-body2;
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 100px;
     }
 
     &__title{
         font-family: $font-body1;
         font-size: 48px;
         margin-bottom: 10px;
+        margin-top: 150px;
     }
 
     &__icons{
         max-width: 100%;
         height:auto;
-        margin-top: 40px;
+        margin-top: 200px;
         align-items: center;
-    }
+    } 
+    
 }

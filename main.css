@@ -78,7 +78,7 @@
 }
 .about__content__text__title {
   font-family: "Cormorant", serif;
-  font-size: 3rem;
+  font-size: 48px;
   margin-top: 48px;
 }
 .about__content__text__paragraph, .about__content__text__paragraph2 {
@@ -106,18 +106,109 @@
 .skills__p {
   font-family: "Inter", serif;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 .skills__title {
   font-family: "Cormorant", serif;
   font-size: 48px;
   margin-bottom: 10px;
+  margin-top: 150px;
 }
 .skills__icons {
   max-width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 200px;
   align-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.project__title {
+  font-family: "Cormorant", serif;
+  font-size: 48px;
+  margin-bottom: 30px;
+  margin-left: 134px;
+  margin-top: 200px;
+}
+.project__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-row-gap: 300px;
+  margin-left: 134px;
+}
+.project__card .project__card1,
+.project__card .project__card2,
+.project__card .project__card3,
+.project__card .project__card4,
+.project__card .project__card5,
+.project__card .project__card6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 472.42px;
+  height: 265px;
+}
+.project__card .project__card1 .projects__img1,
+.project__card .project__card1 .project__img2,
+.project__card .project__card1 .project__img3,
+.project__card .project__card1 .project__img4,
+.project__card .project__card1 .project__img5,
+.project__card .project__card1 .project__img6,
+.project__card .project__card2 .projects__img1,
+.project__card .project__card2 .project__img2,
+.project__card .project__card2 .project__img3,
+.project__card .project__card2 .project__img4,
+.project__card .project__card2 .project__img5,
+.project__card .project__card2 .project__img6,
+.project__card .project__card3 .projects__img1,
+.project__card .project__card3 .project__img2,
+.project__card .project__card3 .project__img3,
+.project__card .project__card3 .project__img4,
+.project__card .project__card3 .project__img5,
+.project__card .project__card3 .project__img6,
+.project__card .project__card4 .projects__img1,
+.project__card .project__card4 .project__img2,
+.project__card .project__card4 .project__img3,
+.project__card .project__card4 .project__img4,
+.project__card .project__card4 .project__img5,
+.project__card .project__card4 .project__img6,
+.project__card .project__card5 .projects__img1,
+.project__card .project__card5 .project__img2,
+.project__card .project__card5 .project__img3,
+.project__card .project__card5 .project__img4,
+.project__card .project__card5 .project__img5,
+.project__card .project__card5 .project__img6,
+.project__card .project__card6 .projects__img1,
+.project__card .project__card6 .project__img2,
+.project__card .project__card6 .project__img3,
+.project__card .project__card6 .project__img4,
+.project__card .project__card6 .project__img5,
+.project__card .project__card6 .project__img6 {
+  width: 100%;
+  height: auto;
+}
+.project__card .project__card1 .project__button,
+.project__card .project__card2 .project__button,
+.project__card .project__card3 .project__button,
+.project__card .project__card4 .project__button,
+.project__card .project__card5 .project__button,
+.project__card .project__card6 .project__button {
+  margin-top: 10px;
+}
+.project__card .project__card1 .project__name,
+.project__card .project__card2 .project__name,
+.project__card .project__card3 .project__name,
+.project__card .project__card4 .project__name,
+.project__card .project__card5 .project__name,
+.project__card .project__card6 .project__name {
+  display: flex;
+  font-family: "Cormorant", serif;
+  justify-content: flex-start;
+  margin-top: 10px;
 }
 
 * {
