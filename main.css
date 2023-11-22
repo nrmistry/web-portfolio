@@ -79,7 +79,7 @@
 .about__content__text__title {
   font-family: "Cormorant", serif;
   font-size: 3rem;
-  margin-top: 10px;
+  margin-top: 48px;
 }
 .about__content__text__paragraph, .about__content__text__paragraph2 {
   font-family: "Inter", serif;
@@ -96,6 +96,28 @@
   height: 558px;
   margin-top: 100px;
   order: 1;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-left: 134px;
+}
+.skills__p {
+  font-family: "Inter", serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.skills__title {
+  font-family: "Cormorant", serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.skills__icons {
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
+  align-items: center;
 }
 
 * {
