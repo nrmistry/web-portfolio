@@ -2,7 +2,7 @@
 .head__title {
   display: flex;
   flex-direction: column;
-  font-size: 128px;
+  font-size: 100px;
   font-family: "Cormorant", serif;
   justify-content: center;
   align-items: center;
@@ -26,20 +26,23 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 10px;
   }
-  .head__title {
+  .head .head__title {
     display: flex;
     justify-content: center;
-    font-size: 75px;
-    margin-right: 0px;
+    text-align: center;
+    font-size: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
   .head__info {
     display: flex;
     justify-content: center;
     font-size: 16px;
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
     margin-bottom: 50px;
   }
 }
@@ -399,7 +402,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 70px;
     margin-right: 40px;
     margin-left: 40px;
     margin-top: 400px;
@@ -409,8 +412,8 @@
     justify-content: center;
     font-size: 16px;
     margin-top: 50px;
-    height: 79px;
-    width: 272px;
+    height: 70px;
+    width: 230px;
   }
 }
 footer {
