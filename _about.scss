@@ -1,138 +1,45 @@
 @use "./variables" as *;
-//this code works for desktop
-//.about{
-   // display:flex;
-
-   // &__title{
-    //    display:flex;
-    //    flex-direction: column;
-    //    justify-content: flex-start;
-      //  font-family: $font-body1;
-        //font-size: 48px;
-    //    margin-top: 200px;
-    //    margin-left: 134px;
-    //    max-width: 335px;
-    //    height: 100px;
-   // }
-
-    //&__paragraph{
-    //    display:flex;
-    //    flex-direction: column;
-     //   justify-content: flex-start;
-    //     font-family: $font-body2;
-    //    font-size: 18px;
-    //    margin-top: 10px;
-     //   margin-left: 134px;
-    //    max-width: 873px;
-    //    height: 150px;
-    //}
-
-    //&__paragraph2{
-    //    display:flex;
-     //   flex-direction: column;
-     //   justify-content: flex-start;
-    //    font-family: $font-body2;
-    //    font-size: 18px;
-    //   margin-top: 10px;
-    //    margin-left: 134px;
-    //    max-width: 873px;
-    //    height: 160px;
-    //}
-
-    //&__img{
-    //    display:flex;
-    //    flex-direction: column;
-    //    justify-content: flex-end;
-     //   max-width: 450px;
-    //    height: 558px;
-    //    margin-top: 100px;
-   // }
-//}
-
 
 .about {
-    display: flex;
-    max-width: 873px; 
-    margin-top: 200px;
-
-    &__content {
+    &__container{
+      margin-top: 180px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+      &__title {
+        font-size: 48px;
+        margin-bottom: 10px;
+        font-family: $font-body1;
+        margin-left:130px;
+      }
+  
+      &__content {
         display: flex;
-        flex-direction: column; 
-
-        &__text {
-            margin-left: 400px; 
-
-            &__title {
-                font-family: $font-body1;
-                font-size: 48px;
-                margin-top: 48px; 
-            }
-
-            &__paragraph,
-            &__paragraph2 {
-                font-family: $font-body2;
-                font-size: 18px; 
-                margin-top: 10px;
-                max-width: 200px;
-                height: auto;
-            }
-
-            &__paragraph2 {
-                margin-top: 5px; 
-            }
-
-            &__img1 {
-                max-width: 200px;
-                height: 558px;
-                margin-top: 100px; 
-                order: 1; 
-            }
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 70px;
+  
+        &--img {
+          width: 350px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          margin-left: 80px;
         }
+  
+        &--paragraph {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 15px;
+          margin-top: 50px;
+          margin-right: 80px;
+          font-family: $font-body2;
+          font-size: 20px;
+          max-width: 60%;
+          padding: 20px;
+        }
+      }
     }
-}
-
-
-
-@media only screen and (max-device-width: 768px) {
-    .about{
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-
-        .about__title {
-            display:flex;
-            justify-content: center;
-            font-size:32px;
-            margin-bottom: 50px;
-        }
-
-        .about__paragraph2 {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 16px;
-            margin-top: 10px;
-            margin-left: 60px;
-            margin-right: 60px;
-            margin-bottom: 0px;
-        }
-
-        .about__paragraph{
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 16px;
-            margin-top: 10px;
-            margin-left: 60px;
-            margin-right: 60px;
-        }
-
-        .about__img1{
-            width:280px;
-            height:240px;
-            margin-bottom: 50px;
-        }
-
-    }
-}
+  

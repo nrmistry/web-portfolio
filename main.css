@@ -1,23 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter&display=swap");
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
 .head__title {
   display: flex;
   flex-direction: column;
   font-size: 100px;
   font-family: "Cormorant", serif;
   justify-content: center;
-  align-items: center;
+  align-self: center;
   margin-top: 213px;
 }
 .head__info {
   font-size: 20px;
+  display: flex;
   font-family: "Inter", serif;
-  text-align: left;
+  align-self: center;
   margin-top: 100px;
-  margin-left: 191px;
   max-width: 615px;
   height: 128px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   line-height: 32px;
 }
 
@@ -51,7 +57,7 @@
   justify-content: space-between;
   align-items: center;
   height: 58px;
-  padding: 0 20px;
+  padding: 30px 30px;
 }
 .navbar__button {
   display: flex;
@@ -104,99 +110,68 @@
     font-size: 24px;
   }
 }
-.about {
+.about__container {
+  margin-top: 180px;
   display: flex;
-  max-width: 873px;
-  margin-top: 200px;
+  flex-direction: column;
+}
+.about__title {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-family: "Cormorant", serif;
+  margin-left: 130px;
 }
 .about__content {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+.about__content--img {
+  width: 350px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+.about__content--paragraph {
+  display: flex;
   flex-direction: column;
-}
-.about__content__text {
-  margin-left: 400px;
-}
-.about__content__text__title {
-  font-family: "Cormorant", serif;
-  font-size: 48px;
-  margin-top: 48px;
-}
-.about__content__text__paragraph, .about__content__text__paragraph2 {
+  align-items: flex-start;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-right: 80px;
   font-family: "Inter", serif;
-  font-size: 18px;
-  margin-top: 10px;
-  max-width: 200px;
-  height: auto;
-}
-.about__content__text__paragraph2 {
-  margin-top: 5px;
-}
-.about__content__text__img1 {
-  max-width: 200px;
-  height: 558px;
-  margin-top: 100px;
-  order: 1;
+  font-size: 20px;
+  max-width: 60%;
+  padding: 20px;
 }
 
-@media only screen and (max-device-width: 768px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-  .about .about__title {
-    display: flex;
-    justify-content: center;
-    font-size: 32px;
-    margin-bottom: 50px;
-  }
-  .about .about__paragraph2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 0px;
-  }
-  .about .about__paragraph {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  .about .about__img1 {
-    width: 280px;
-    height: 240px;
-    margin-bottom: 50px;
-  }
-}
 .skills {
   display: flex;
   flex-direction: column;
-  margin-left: 134px;
 }
 .skills__p {
   font-family: "Inter", serif;
   font-size: 20px;
   margin-top: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .skills__title {
   font-family: "Cormorant", serif;
   font-size: 48px;
   margin-bottom: 10px;
   margin-top: 150px;
+  margin-left: 130px;
 }
 .skills__icons {
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
   height: auto;
   margin-top: 200px;
-  align-items: center;
+  align-self: center;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -364,12 +339,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 128px;
+  align-self: center;
+  font-size: 100px;
   font-family: "Cormorant", serif;
   margin-top: 500px;
-  margin-bottom: 100px;
-  margin-left: 134px;
 }
 .contact__button {
   display: flex;
@@ -396,16 +369,16 @@
   .contact {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .contact__title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 70px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 400px;
+    align-self: center;
+    font-size: 50px;
+    margin-top: 200px;
   }
   .contact__button {
     display: flex;
