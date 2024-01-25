@@ -208,53 +208,20 @@
   justify-content: space-between;
   width: 472.42px;
   height: 265px;
+  align-self: center;
 }
-.project__card .project__card1 .projects__img1,
-.project__card .project__card1 .project__img2,
-.project__card .project__card1 .project__img3,
-.project__card .project__card1 .project__img4,
-.project__card .project__card1 .project__img5,
-.project__card .project__card1 .project__img6,
-.project__card .project__card2 .projects__img1,
-.project__card .project__card2 .project__img2,
-.project__card .project__card2 .project__img3,
-.project__card .project__card2 .project__img4,
-.project__card .project__card2 .project__img5,
-.project__card .project__card2 .project__img6,
-.project__card .project__card3 .projects__img1,
-.project__card .project__card3 .project__img2,
-.project__card .project__card3 .project__img3,
-.project__card .project__card3 .project__img4,
-.project__card .project__card3 .project__img5,
-.project__card .project__card3 .project__img6,
-.project__card .project__card4 .projects__img1,
-.project__card .project__card4 .project__img2,
-.project__card .project__card4 .project__img3,
-.project__card .project__card4 .project__img4,
-.project__card .project__card4 .project__img5,
-.project__card .project__card4 .project__img6,
-.project__card .project__card5 .projects__img1,
-.project__card .project__card5 .project__img2,
-.project__card .project__card5 .project__img3,
-.project__card .project__card5 .project__img4,
-.project__card .project__card5 .project__img5,
-.project__card .project__card5 .project__img6,
-.project__card .project__card6 .projects__img1,
-.project__card .project__card6 .project__img2,
-.project__card .project__card6 .project__img3,
-.project__card .project__card6 .project__img4,
-.project__card .project__card6 .project__img5,
-.project__card .project__card6 .project__img6 {
-  width: 100%;
-  height: auto;
-  align-items: center;
+.project__card .project__img1,
+.project__card .project__img2,
+.project__card .project__img3,
+.project__card .project__img4,
+.project__card .project__img5,
+.project__card .project__img6 {
+  width: 472.42px;
+  max-height: 265px;
+  align-self: center;
+  border-radius: 10px;
 }
-.project__card .project__card1 .project__button,
-.project__card .project__card2 .project__button,
-.project__card .project__card3 .project__button,
-.project__card .project__card4 .project__button,
-.project__card .project__card5 .project__button,
-.project__card .project__card6 .project__button {
+.project__card .project__button {
   display: flex;
   margin-top: 10px;
   background-color: white;
@@ -262,28 +229,16 @@
   font-family: "Inter", serif;
   font-size: 12px;
   text-decoration: none;
+  flex-direction: row;
   justify-content: flex-start;
 }
-.project__card .project__card1 .project__button--eye,
-.project__card .project__card1 .project__button--snippet,
-.project__card .project__card2 .project__button--eye,
-.project__card .project__card2 .project__button--snippet,
-.project__card .project__card3 .project__button--eye,
-.project__card .project__card3 .project__button--snippet,
-.project__card .project__card4 .project__button--eye,
-.project__card .project__card4 .project__button--snippet,
-.project__card .project__card5 .project__button--eye,
-.project__card .project__card5 .project__button--snippet,
-.project__card .project__card6 .project__button--eye,
-.project__card .project__card6 .project__button--snippet {
+.project__card .project__button--eye,
+.project__card .project__button--snippet {
   background-color: white;
+  display: flex;
+  justify-content: flex-end;
 }
-.project__card .project__card1 .project__name,
-.project__card .project__card2 .project__name,
-.project__card .project__card3 .project__name,
-.project__card .project__card4 .project__name,
-.project__card .project__card5 .project__name,
-.project__card .project__card6 .project__name {
+.project__card .project__name {
   display: flex;
   font-family: "Cormorant", serif;
   justify-content: flex-start;
@@ -342,7 +297,7 @@
   align-self: center;
   font-size: 100px;
   font-family: "Cormorant", serif;
-  margin-top: 500px;
+  margin-top: 400px;
 }
 .contact__button {
   display: flex;
@@ -389,44 +344,43 @@
     width: 230px;
   }
 }
-footer {
-  background-color: black;
-  height: 114px;
-  width: 100vw;
+section footer {
+  background-color: #333;
+}
+section footer .foot {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer__foot {
-  display: flex;
-  justify-content: center;
-}
-footer__foot__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 55px;
-  height: 55px;
+  height: 100px;
+  max-width: 100%;
   background-color: black;
-  text-decoration: none;
-  border-radius: 50%;
 }
-footer__foot__button__img1, footer__foot__button__img2, footer__foot__button__img3 {
-  width: 20px;
-  height: 20px;
-  background-color: white;
+section footer .foot .foot__contacts {
+  list-style: none;
+  padding: 0;
+  background-color: black;
+}
+section footer .foot .foot__contacts .foot__button {
+  margin: 0 20px;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+section footer .foot .foot__contacts .foot__button .foot__img1,
+section footer .foot .foot__contacts .foot__button .foot__img2 {
+  width: 30px;
+  height: auto;
+  filter: invert(1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .foot {
     flex-direction: column;
     justify-content: center;
     height: auto;
     width: 100vw;
     background-color: black;
-  }
-  .foot .foot__contacts {
-    margin-top: 100px;
   }
   .foot .foot__button {
     margin-bottom: 5px;

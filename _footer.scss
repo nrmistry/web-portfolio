@@ -1,41 +1,45 @@
 @use "./variables" as *;
 @use "./variables" as *;
-footer{
-    background-color: $secondary-color;
-    height: 114px;
-    width: 100vw;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-    &__foot {
+
+section {
+    footer {
+      background-color: #333; 
+      
+      .foot {
         display: flex;
-        justify-content: center;
-
-        &__button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 55px;
-            height: 55px;
-            background-color: $secondary-color;
-            text-decoration: none;
-            border-radius: 50%;
-
-            &__img1,
-            &__img2,
-            &__img3 {
-                width: 20px;
-                height: 20px;
-                background-color: white;
+        justify-content: center; 
+        align-items: center; 
+        height: 100px; 
+        max-width:100%; 
+        background-color: black;
+  
+        .foot__contacts {
+          list-style: none;
+          padding: 0;
+          background-color: black;
+  
+          .foot__button {
+            margin: 0 20px; 
+            background-color: #000; 
+            padding: 10px; 
+            border-radius: 8px; 
+            display: inline-block;
+  
+            .foot__img1,
+            .foot__img2 {
+              width: 30px; 
+              height: auto; 
+              filter: invert(1); 
             }
+          }
         }
+      }
     }
-}
+  }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
     .foot{
         flex-direction: column;
         justify-content: center;
@@ -43,9 +47,6 @@ footer{
         width:100vw;
         background-color: $secondary-color;
 
-        .foot__contacts {
-        margin-top: 100px;
-        }
 
         .foot__button {
         margin-bottom: 5px;
